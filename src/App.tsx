@@ -4,13 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Nav from './components/Nav';
 import SearchInput from './components/SearchInput';
 import SearchList from './components/SearchList';
+import { environment } from './environment/environment.staging';
 
 function App() {
   const [movies, setMovies] = useState([]);
   const [search ,setSearch] = useState('');
 
   const fetchMovies= async(search:string)=>{
-    const url = `http://www.omdbapi.com/?s=${search}&apikey=53243c5c`
+    const url = `${environment.BASE_URL}/?s=${search}&apikey=${process.env.REACT_APP_API_KEY}`
 
     const response = await fetch(url);
     const resultJson = await response.json()

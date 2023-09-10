@@ -1,6 +1,5 @@
 body {
 	background: #141414 !important;
-	color: #ffffff !important;
 }
 
 .logo{
@@ -10,22 +9,22 @@ body {
 	font-weight: 800;
 }
 
-/* .card-container{
-	position: relative !important;
-	width: 50% !important;
-	max-width: 300px !important;
-} */
+.title-style{
+	color: red;
+}
+
+
 .img-style{
 	/* display: block !important; */
 	/* width: 100% !important; */
 	/* height: auto !important; */
 }
 
-/* .img-style:hover .overlay{
+.img-style:hover .overlay{
 	opacity: 1 !important;
 	cursor: pointer !important;
 	transform: scale(1.1) !important;
-} */
+}
 
 /* .overlay {
 	position: absolute !important; 
