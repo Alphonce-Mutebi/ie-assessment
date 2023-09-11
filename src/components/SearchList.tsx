@@ -7,7 +7,10 @@ const SearchList = (props:any)=>{
         <>
         {
             isLoading?(
-                <h1 className="text-light text-center mt-4">Loading...</h1>
+                <div className="d-flex justify-content-center mt-4">
+                    <div className="spinner-border text-danger" role="status">
+                </div>
+            </div>
             ):(
                 <>
                     {apiResponse?.map((movie:any)=>

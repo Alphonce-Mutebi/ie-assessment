@@ -13,30 +13,19 @@ body {
 	color: red;
 }
 
-
-.img-style{
-	/* display: block !important; */
-	/* width: 100% !important; */
-	/* height: auto !important; */
+.title-style:hover{
+	color: red;
 }
 
-.img-style:hover .overlay{
-	opacity: 1 !important;
-	cursor: pointer !important;
-	transform: scale(1.1) !important;
+.card-container {
+	position: relative;
+	transition: transform 0.2s;
 }
 
-/* .overlay {
-	position: absolute !important; 
-	bottom: 0 !important; 
-	background: rgb(0, 0, 0) !important;
-	background: rgba(0, 0, 0, 0.5) !important; 
-	color: #f1f1f1 !important; 
-	width: 100% !important;
-	transition: .5s ease !important;
-	opacity:0 !important;
-	color: white !important;
-	font-size: 20px;
-	padding: 20px;
-	text-align: center;
-  } */
+.card-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+
+
